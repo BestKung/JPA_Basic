@@ -3,12 +3,13 @@
   <persistence-unit name="JPA_Basic" transaction-type="RESOURCE_LOCAL">
     <provider>org.hibernate.ejb.HibernatePersistence</provider>
     <class>th.co.geniustree.jpa_basic.Employee</class>
+    <class>th.co.geniustree.relation.manytoone.Department2</class>
+    <class>th.co.geniustree.relation.manytoone.Employees2</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/sample"/>
       <property name="javax.persistence.jdbc.user" value="app"/>
       <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
       <property name="javax.persistence.jdbc.password" value="app"/>
-      <property name="javax.persistence.schema-generation.database.action" value="create"/>
     </properties>
   </persistence-unit>
 </persistence>
