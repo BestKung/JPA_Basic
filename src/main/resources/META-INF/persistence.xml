@@ -2,9 +2,8 @@
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
   <persistence-unit name="JPA_Basic" transaction-type="RESOURCE_LOCAL">
     <provider>org.hibernate.ejb.HibernatePersistence</provider>
-    <class>th.co.geniustree.jpa_basic.Employee</class>
-    <class>th.co.geniustree.relation.manytoone.Department2</class>
-    <class>th.co.geniustree.relation.manytoone.Employees2</class>
+    <class>th.co.geniustree.relation.onetomany.DepartmentOneToMany</class>
+    <class>th.co.geniustree.relation.onetomany.EmployeeOneToMany</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/sample"/>
       <property name="javax.persistence.jdbc.user" value="app"/>
